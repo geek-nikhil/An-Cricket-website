@@ -4,89 +4,136 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cricket verse</title>
+    <title>Login Page</title>
+    <style>
+        *{
+            box-sizing: 0;
+            margin: 0;
+        }
+         .container{
+            text-align: center; 
+            margin: 300px;
+            padding: 90px;
+            border: solid 15px black ;
+            border-radius: 5%;
+    
+         }
+         .email1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.email {
+  height: 20px;
+  background: none;
+  color:black;
+  font-size: 2rem;
+  padding: .5rem .7rem;
+  display: block;
+  border: none;
+  border-bottom: 2px solid #c6c6c6;
+  width: 100%;
+  z-index: 2;
+  transition: all .3s ease;
+}
+
+.email:focus {
+  outline: transparent;
+  border-color: blue;
+}
+
+.email:focus~.label1,
+.email:not([value=""]):not(:focus):invalid~.label1,
+.email.has-content~.label1 {
+  font-size: .7rem;
+  top: -.4rem;
+  color: blue;
+}
+
+.label1 {
+  position: absolute;
+  color:white;
+  font-size: 1.7rem;
+  left: 0.5rem;
+  top: .4rem;
+  transition: all .3s ease;
+}
+.email2{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+}
+
+.password{
+   
+  height: 20px;
+  background: none;
+  color: white;
+  font-size: 1rem;
+  padding: .5rem .7rem;
+  display: block;
+  border: none;
+  border-bottom: 2px solid #c6c6c6;
+  width: 95%;
+  z-index: 2;
+  transition: all .3s ease;
+}
+
+.password:focus {
+  outline: transparent;
+  border-color: blue;
+}
+
+.password:focus~.label2,
+.password:not([value=""]):not(:focus):invalid~.labe2,
+.password.has-content~.label2 {
+  font-size: .7rem;
+  top: 34rem;
+  color: blue;
+}
+
+.label2 {
+  position: absolute;
+  color:white;
+  font-size: 1.7rem;
+  left: 25rem;
+  top: 35rem;
+  transition: all .3s ease;
+}
+.login{
+    position: absolute;
+    top:40rem;
+    left:45rem;
+    width: 4rem;
+    height: 2rem;
+    border-radius:20%;
+    color:black;
+    font-family: "Work sans";
+    background-color: aliceblue;
+    font-size: larger;
+    cursor: pointer;
+    
+}
+    </style>
 </head>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<body>
-    <header class="header">
-      <img src="image/Screenshot (35).png" alt="cricket logo" class="logo">
-      
-      
-      <nav class="navbar">
-        <ul class="navbar-list">
-            <li><a class="navbar-link" href="#">Home</a></li>
-            <li><a class="navbar-link" href="#">About</a></li>
-            <li><a class="navbar-link" href="#">Services</a></li>
-            <li><a class="navbar-link" href="#">Gallery</a></li>
-            <li><a class="navbar-link" href="https://www.linkedin.com/in/nikhil-raikwar-697901259/" target="blank">Contact</a></li>
-            <li><a class="navbar-link"href="#"><img class="photo" src="image/WhatsApp Image 2023-05-19 at 20.12.54.jpg" width="70px"><p class="profile">profile</p></a></li>
-        </ul>
-      </nav>
-      <div class="navbar-btn">
-        <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
-        <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
-      </div>
-    </header>
-    <main>
-      <div class="image_1">
-     <img  class="image1"  src="image/bg-bangh.jpg">
-     <h1 style="font-size: 350%;" class="text">Cricket is the<span class="update"></span></h1>
-    <div class="know"><a href="https://en.wikipedia.org/wiki/Cricket" class="know1">
-      <p>know more about cricket</p>
-      <p>...</p>
-    </a>
+<body background="image/1112826-1930x1287-desktop-hd-cricket-wallpaper-photo.webp">
+    <div class="container">
+       <h2>Login</h2>
+       <div class="email1">
+       <input type="email" class="email"> <label class="label1">Email</label>
+       <br>
     </div>
-      </p>
+    <div class="email2"></div>
+       <input type="password" class="password"><label class="label2">Password</label>
+       <br>
     </div>
-    <br>
-    <h2 class="upcoming">Upcoming Matches<p></p></h2>
-    <div class="bd-example">
-      <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <a href="#"><img src="image/Screenshot (32).png" class="d-block w-100" alt="..."></a>
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="image/Sony-Sports-Live-India-Vs-Australia-2018.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="image/maxresdefault.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p><h1>A big and never seen competition/match for every one</h1></p>
-            </div>
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-    </div>
-    </main>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="script.js"></script>
+    <a href="index1.html"><button class="login">login</button></a>
+</div>
+       <input type="checkbox" class="email" ><label>Remember me forget password</labe>
+       <br>
+     
 </body>
 </html>
