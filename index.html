@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
+  </head>
     <style>
         *{
             box-sizing: 0;
@@ -28,12 +29,12 @@
 .email {
   height: 20px;
   background: none;
-  color:black;
+  color:rgb(0, 0, 0);
   font-size: 2rem;
   padding: .5rem .7rem;
   display: block;
   border: none;
-  border-bottom: 2px solid #c6c6c6;
+  border-bottom: 2px solid #322c2c;
   width: 100%;
   z-index: 2;
   transition: all .3s ease;
@@ -41,7 +42,7 @@
 
 .email:focus {
   outline: transparent;
-  border-color: blue;
+  border-color: rgb(169, 169, 254);
 }
 
 .email:focus~.label1,
@@ -117,8 +118,18 @@
     cursor: pointer;
     
 }
+@media (max-width:63em) {
+       .container{
+        padding-right: 20rem;
+        padding-left: -500rem;
+       }
+       .label1{
+        color:black;
+        border-bottom: 3px solid;
+       }
+
+}
     </style>
-</head>
 <body background="image/1112826-1930x1287-desktop-hd-cricket-wallpaper-photo.webp">
     <div class="container">
        <h2>Login</h2>
@@ -130,10 +141,9 @@
        <input type="password" class="password"><label class="label2">Password</label>
        <br>
     </div>
-    <a href="index1.html"><button class="login">login</button></a>
+    <a href="index1.html "><button class="login">login</button></a>
 </div>
        <input type="checkbox" class="email" ><label>Remember me forget password</labe>
        <br>
-     
 </body>
 </html>

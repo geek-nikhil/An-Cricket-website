@@ -160,7 +160,7 @@ ul{
 h1{
     font-family:"Work Sans";
     position: absolute;
-    top: 33%;
+    top: 143%;
     display:flex;
     color:aliceblue;
     left: 10%;
@@ -171,7 +171,7 @@ h1{
     transform: translateX(5%);
     transition: all 5s linear;
 }
-span::before{
+.div::before{
   
     font-family:"Work Sans";
     content:' ';
@@ -196,7 +196,7 @@ h2{
 }
 .know{
     position: absolute;
-    top:   64%;
+    top:   179%;
     color: aliceblue;
     left: 10%;
       font-size: 200%;
@@ -213,6 +213,39 @@ h2{
     text-decoration: none;
 }
 .bd-example{
-    width:90%;
-   margin-left: 5%;
+    text-align: center;
+    margin: auto;
 }
+.ticket{
+    position: relative;
+    color: black;
+    background-color: beige;
+       padding: 4%;
+    
+}
+.book{
+    position: absolute;
+    top: 95%;
+    right: 10%;
+    padding: 3%;
+    border-radius: 9%;
+    margin:2%;
+    border:solid 496% black;
+    background-color: rgb(227, 134, 134);
+    color: #e7f5ff;
+    font-size: large;
+}
+.book-t{
+    font-family:"Work Sans",sans-serif;
+    font-size:xx-large;
+    color: chocolate;
+}
+.book:hover{
+  background-color: red;
+}
+#booking{
+   text-align: center;
+}
+.no{
+    font-size: xx-large;
+    }
